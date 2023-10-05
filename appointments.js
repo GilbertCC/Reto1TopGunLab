@@ -24,20 +24,25 @@ export const addAppointments = (appointment) => {
   //  console.log(miData);
   cardContainer.innerHTML = "";
 
-  for (let i = 0; i < appointments.length; i++) {
-    const container = document.createElement("div");
-    container.setAttribute("class", "card");
+for (let i = 0; i < appointments.length; i++) {
+  const container = document.createElement("div");
+  container.setAttribute("class", "card");
 
-    const h3Nombre = document.createElement("h3");
-    h3Nombre.textContent = appointments[i].name;
+  const h3Nombre = document.createElement("h3");
+  h3Nombre.textContent = appointments[i].name;
 
-    const pDate = document.createElement("p");
-    pDate.textContent = `Fecha: ${appointments[i].date}`;
+  const appointmentDate = new Date(appointments[i].date);
 
-    container.appendChild(h3Nombre);
-    container.appendChild(pDate);
-    cardContainer.appendChild(container);
-  }
+  const pDate = document.createElement("p");
+
+  const formattedDate = `${appointmentDate.toLocaleDateString()} ${appointmentDate.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', hour12: true })}`;
+
+  pDate.textContent = `Fecha: ${formattedDate}`;
+
+  container.appendChild(h3Nombre);
+  container.appendChild(pDate);
+  cardContainer.appendChild(container);
+}
 };
 
 export const getAppointments = () => {

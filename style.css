@@ -6,6 +6,9 @@ body{
     text-align: center;
     background: #04BFBF;
 }
+header h1{
+    padding-top: 10px;
+}
 
 body h1{
     margin-bottom: 20px;
@@ -51,55 +54,49 @@ button[type="submit"] {
     cursor: pointer;
     font-weight: bold;
 }
+/*Estilos botón de envio*/
 
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
-#citas-lista{
+/*Estilos section citas para centrar y separar*/
+.citas{
+    padding-top: 20px;
+}
+.citas-lista{
     display: grid;
     align-items: center;
     justify-content: center;
 }
-.cita-card{
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
-    margin: 20px;
-    width: 200px;
-    height: 50px;
-    background: linear-gradient(134deg rgba(255,255,255,0.1), rgba(255,255,255,0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+
+/*Estilos .card trajeta de citas*/
+.card {
+    background: #ccc;
     border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.10);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 10px; 
+    text-align: center; 
+    margin: 10px; 
+    width: 200px; 
 }
-.cita-card:hover{
+.card:hover{
     transform: scale(1.2);
     cursor: pointer;
 }
 
-/* Estilos para el elemento .card */
-.card {
-    background-color: #ffffff; /* Color de fondo */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    padding: 10px; /* Espaciado interno */
-    text-align: center; /* Alineación del contenido */
-    margin: 10px; /* Margen exterior */
-    width: 200px; /* Ancho del elemento (ajusta según tus necesidades) */
-}
 
-/* Estilos para el título h3 dentro de .card */
+/* Estilos para titulo h3 dentro de .card*/
 .card h3 {
-    font-size: 24px; /* Tamaño de fuente */
-    color: #333333; /* Color de texto */
-    margin: 10px 0; /* Margen superior e inferior */
+    font-size: 24px; 
+    color: #000000; 
+    margin: 10px 0; 
 }
 
-/* Estilos para el párrafo p dentro de .card */
+
+/* Estilos para p dentro de .card*/
 .card p {
-    font-size: 16px; /* Tamaño de fuente */
-    color: #888888; /* Color de texto */
-    margin: 5px 0; /* Margen superior e inferior */
+    font-size: 16px; 
+    color: #000000; 
+    margin: 5px 0; 
 }

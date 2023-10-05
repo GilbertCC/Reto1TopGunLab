@@ -8,20 +8,6 @@ export const addAppointments = (appointment) => {
   appointments = getAppointments();
 
   appointments.push(appointment);
-  // Obtener un valor de localStorage
-  //  const miDataJson = localStorage.getItem('miData');
-  //  const miData = JSON.parse(miDataJson);
-
-  //  if (miData === null) {
-  //    appointments = [appointment];
-  //  } else {
-  //    appointments = [...miData, appointment];
-  //  }
-
-  //  const appointmentsJSON = JSON.stringify(appointments);
-  //  localStorage.setItem('miData', appointmentsJSON);
-
-  //  console.log(miData);
   cardContainer.innerHTML = "";
 
 for (let i = 0; i < appointments.length; i++) {

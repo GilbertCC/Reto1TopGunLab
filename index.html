@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>TopGunlab reto 1</title>
 </head>
 <body>
     <h1>Agendamiento de Citas</H1>
-        <form>
-            <label>
-                Nombre
-            </label>
-            <input type="text" placeholder="David Romero" >
-            <label for="fecha">fecha</label>
-            <input type="datetime-local">
-            <button type="submit">agendar!</button>
+        <form class="formulario" id="cita-form">
+            <label for="nombre" >Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="David Ramirez">
+    
+            <label for="fecha">Fecha/Hora:</label>
+            <input type="datetime-local" id="fecha" name="fecha" required>
+    
+            <button type="submit">Enviar</button>
         </form>
-<script src="./script.js"></script>
+        <h1> Cola de citas </h1>
+        <div id="citas-lista">
+
+        </div>
+    
+        
+        <script src="script.js"></script>
 </body>
 </html>

@@ -78,3 +78,28 @@ button[type="submit"]:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
+
+/* Estilos para el elemento .card */
+.card {
+    background-color: #ffffff; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Alineación del contenido */
+    margin: 10px; /* Margen exterior */
+    width: 200px; /* Ancho del elemento (ajusta según tus necesidades) */
+}
+
+/* Estilos para el título h3 dentro de .card */
+.card h3 {
+    font-size: 24px; /* Tamaño de fuente */
+    color: #333333; /* Color de texto */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+/* Estilos para el párrafo p dentro de .card */
+.card p {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #888888; /* Color de texto */
+    margin: 5px 0; /* Margen superior e inferior */
+}

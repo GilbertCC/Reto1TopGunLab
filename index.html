@@ -4,25 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>TopGunlab reto 1</title>
+    <title>TopGunlab - Reto 1: Agendamiento de Citas</title>
 </head>
 <body>
-    <h1>Agendamiento de Citas</H1>
-        <form class="formulario" id="cita-form">
-            <label for="nombre" >Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required placeholder="David Ramirez">
+    <header>
+        <h1>Agendamiento de Citas</h1>
+    </header>
     
-            <label for="fecha">Fecha/Hora:</label>
-            <input type="datetime-local" id="fecha" name="fecha" required>
+    <main>
+        <section class="formulario">
+            <h2>Crear Nueva Cita</h2>
+            <form id="cita-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="David Ramirez">
     
-            <button type="submit">Enviar</button>
-        </form>
-        <h1> Cola de citas </h1>
-        <div id="citas-lista">
+                <label for="fecha">Fecha/Hora:</label>
+                <input type="datetime-local" id="fecha" name="fecha" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
-        </div>
-    
+        <section class="citas">
+            <h2>Cola de Citas</h2>
+            <div class="citas-lista">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <script type="module" src="./appointments.js"></script>
+        <script type="module" src="./index.js"></script>
         
-        <script src="script.js"></script>
+    </footer>
 </body>
 </html>
